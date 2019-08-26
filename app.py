@@ -96,3 +96,9 @@ def delete_cupcake(cupcake_id):
 
 
     return (jsonify({"message": "Cupcake deleted"}))
+
+
+
+@app.route('/')
+def show_cupcakes_list():
+    return render_template("home.html")
